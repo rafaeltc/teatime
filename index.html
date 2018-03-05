@@ -1,0 +1,161 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>TEA Website</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Catamaran|Dancing+Script|Gloria+Hallelujah|Libre+Barcode+39+Text|Pacifico|Supermercado+One" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Uses a transparent header that draws on top of the layout's background -->
+  <style>
+    .demo-layout-transparent {
+      background: url('resources/images/902879-tea-wallpapers.jpg') center / cover;
+    }
+
+    .demo-layout-transparent .mdl-layout__header,
+    .demo-layout-transparent .mdl-layout__drawer-button {
+      /* This background is dark, so we set text to white. Use 87% black instead if
+           your background is light. */
+      color: white;
+    }
+
+    .custom-icon {
+      width: 50px;
+    }
+  </style>
+
+  <!-- Card layout -->
+  <style>
+    .demo-card-square.mdl-card {
+      width: 320px;
+      height: 320px;
+    }
+
+    .demo-card-square>.mdl-card__title {
+      color: #fff;
+      background: url('resources/images/lapsang-pmanson-whitebg.png') bottom right 15% no-repeat #46B6AC;
+    }
+  </style>
+
+  <div class="demo-layout-transparent mdl-layout mdl-js-layout">
+    <header class="mdl-layout__header mdl-layout__header--transparent">
+      <div class="mdl-layout__header-row">
+        <!-- Title -->
+        <span class="mdl-layout-title">128.0.0.0/brew</span>
+        <!-- Add spacer, to align navigation to the right -->
+        <div class="mdl-layout-spacer"></div>
+        <!-- Navigation -->
+        <nav class="mdl-navigation">
+          <a class="mdl-navigation__link" href="">Tea List</a>
+          <a class="mdl-navigation__link" href="">Tea Brewing</a>
+          <a class="mdl-navigation__link" href="">Link</a>
+          <a class="mdl-navigation__link" href="">Link</a>
+        </nav>
+      </div>
+    </header>
+    <div class="mdl-layout__drawer">
+      <!--<span class="mdl-layout-title">Cool Stuff</span>-->
+      <nav class="mdl-navigation">
+        <a class="mdl-navigation__link" href="">Tea List</a>
+        <a class="mdl-navigation__link" href="">Tea Brewing</a>
+        <a class="mdl-navigation__link" href="">Link</a>
+        <a class="mdl-navigation__link" href="">Link</a>
+      </nav>
+    </div>
+    <main class="mdl-layout__content text-center">
+
+
+      <!-- imponent title here -->
+      <div class="text-center">
+        <h2 style="font-family: 'Pacifico', cursive;">Current Brew</h2>
+        <!--<img src="resources\images\lapsang-pmanson-whitebg.png" class="rounded-circle"/>-->
+      </div>
+
+      <!-- Grid start -->
+      <div class="mdl-grid portfolio-max-width mdl-typography--text-center">
+
+        <div class="mdl-layout-spacer"></div>
+        <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
+          <h3 style="font-family: 'Pacifico', cursive;">Tea Name</h3>
+          <div class="mdl-card__media" style="background:#FFFFFF">
+            <img class="article-image" src="resources\images\lapsang-pmanson.png" border="0" alt="">
+          </div>
+          <div class="mdl-card__supporting-text">
+            Chá espetacular com sabor a chá, que é mesmo do melhor que por aí há deste tipo de chá e tal cenas.
+          </div>
+          <div class="mdl-card__actions mdl-card--border">
+              <div class="row justify-content-center">
+                <div class="col-md-4">
+                  <img src="resources\images\icon-qty-01.png" class="custom-icon rounded-circle"/>
+                </div>
+
+                <div class="col-md-4">
+                  <img src="resources\images\icon-temp-01.png" class="custom-icon rounded-circle"/>
+                </div>
+
+                <div class="col-md-4">
+                  <img src="resources\images\icon-time-01.png" class="custom-icon rounded-circle"/>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-4">
+                    <span>1 teaspoon for 1/2L water</span>
+                </div>
+                <div class="col-md-4">
+                  <span>80º</span>
+                </div>
+                <div class="col-md-4">
+                  <span>2''</span>
+                </div>
+            </div>
+
+
+            <!--
+            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="portfolio-example01.html" data-upgraded=",MaterialButton,MaterialRipple">Read more<span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></a>
+          -->
+          </div>
+        </div>
+        <div class="mdl-layout-spacer"></div>
+      </div>
+
+
+      <!--
+                <div class="row">
+                    <div class="col-md-2" style="background:#FFFFFF">
+                      <img src="resources\images\icon-qty-01.png" class="rounded-circle"/>
+                    </div>
+                    <div class="col-md-2">
+                      <img src="resources\images\icon-temp-01.png" class="rounded-circle"/>
+                    </div>
+                    <div class="col-md-2">
+                      <img src="resources\images\icon-time-01.png" class="rounded-circle"/>
+                    </div>
+                </div>
+              -->
+
+      <div class="d-flex justify-content-center">
+        <div class="col-xs-2">Quantity: ****</div>
+        <div class="col-xs-2">Temperature: ****</div>
+        <div class="col-xs-2">Time: ****</div>
+      </div>
+
+    </main>
+  </div>
+
+
+
+</body>
+
+</html>
